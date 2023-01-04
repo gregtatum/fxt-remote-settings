@@ -1,0 +1,11 @@
+{
+  "name": "fxt-remote-settings",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Greg Tatum",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "node-fetch": "^3.3.0"
+  }
+}
