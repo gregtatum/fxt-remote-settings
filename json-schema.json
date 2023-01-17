@@ -1,42 +1,55 @@
 {
-  "type": "object",
-  "required": [
-    "name",
-    "version",
-    "fromLang",
-    "toLang",
-    "fileType"
-  ],
-  "properties": {
-    "name": {
-      "type": "string",
-      "title": "Name",
-      "description": "The name of the language model"
-    },
-    "version": {
-      "type": "number",
-      "title": "Version",
-      "description": "The version of the model"
-    },
-    "fromLang": {
-      "type": "string",
-      "title": "From Language",
-      "description": "The BCP 47 language tag that will be translated from"
-    },
-    "toLang": {
-      "type": "string",
-      "title": "To Language",
-      "description": "The BCP 47 language tag that will be translated to"
-    },
-    "fileType": {
-     	"enum": [
-        "model",
-        "lex",
-        "vocab",
-        "qualityModel",
-        "srcvocab",
-        "trgvocab"
-  	  ]
+  "sort": "-last_modified",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name",
+      "version",
+      "fromLang",
+      "toLang",
+      "fileType"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "description": "The name of the language model"
+      },
+      "toLang": {
+        "type": "string",
+        "title": "To Language",
+        "description": "The BCP 47 language tag that will be translated to"
+      },
+      "version": {
+        "type": "number",
+        "title": "Version",
+        "description": "The version of the model"
+      },
+      "fileType": {
+        "enum": [
+          "model",
+          "lex",
+          "vocab",
+          "qualityModel",
+          "srcvocab",
+          "trgvocab"
+        ]
+      },
+      "fromLang": {
+        "type": "string",
+        "title": "From Language",
+        "description": "The BCP 47 language tag that will be translated from"
+      }
     }
-  }
+  },
+  "status": "signed",
+  "uiSchema": {},
+  "attachment": {
+    "enabled": true,
+    "required": true
+  },
+  "cache_expires": 0,
+  "displayFields": [
+    "fromLang, toLang, fileType, version"
+  ]
 }
