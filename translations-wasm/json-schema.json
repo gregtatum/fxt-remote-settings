@@ -1,0 +1,47 @@
+{
+  "sort": "-last_modified",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name",
+      "release",
+      "revision",
+      "license"
+    ],
+    "properties": {
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "description": "The name of the project, e.g. bergamot-translator"
+      },
+      "release": {
+        "type": "string",
+        "title": "Release",
+        "description": "The human readable identifier for the release. e.g. v0.4.4"
+      },
+      "revision": {
+        "type": "string",
+        "title": "Revision",
+        "description": "The commit hash for the project that generated the wasm."
+      },
+      "license": {
+        "type": "string",
+        "title": "License",
+        "description": "The license of the wasm, as a https://spdx.org/licenses/"
+      }
+    }
+  },
+  "status": "signed",
+  "uiSchema": {},
+  "attachment": {
+    "enabled": true,
+    "required": true
+  },
+  "cache_expires": 0,
+  "displayFields": [
+    "name",
+    "release",
+    "revision",
+    "license"
+  ]
+}
