@@ -1,0 +1,35 @@
+{
+  "sort": "-last_modified",
+  "schema": {
+    "type": "object",
+    "required": [
+      "name",
+      "version"
+    ],
+    "properties": {
+      "id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "description": "The name of the language identification model"
+      },
+      "version": {
+        "type": "number",
+        "title": "Version",
+        "description": "The version of the model"
+      }
+    }
+  },
+  "status": "to-review",
+  "uiSchema": {},
+  "attachment": {
+    "enabled": true,
+    "required": true
+  },
+  "displayFields": [
+    "name",
+    "version"
+  ]
+}
