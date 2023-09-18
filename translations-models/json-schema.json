@@ -10,6 +10,9 @@
       "fileType"
     ],
     "properties": {
+      "id": {
+        "type": "string"
+      },
       "name": {
         "type": "string",
         "title": "Name",
@@ -21,7 +24,7 @@
         "description": "The BCP 47 language tag that will be translated to"
       },
       "version": {
-        "type": "number",
+        "type": "string",
         "title": "Version",
         "description": "The version of the model"
       },
@@ -39,6 +42,11 @@
         "type": "string",
         "title": "From Language",
         "description": "The BCP 47 language tag that will be translated from"
+      },
+      "filter_expression": {
+        "type": "string",
+        "title": "Filter Expression",
+        "description": "A JEXL to filter records"
       }
     }
   },

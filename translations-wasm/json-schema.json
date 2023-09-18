@@ -9,10 +9,18 @@
       "license"
     ],
     "properties": {
+      "id": {
+        "type": "string"
+      },
       "name": {
         "type": "string",
         "title": "Name",
         "description": "The name of the project, e.g. bergamot-translator"
+      },
+      "license": {
+        "type": "string",
+        "title": "License",
+        "description": "The license of the wasm, as a https://spdx.org/licenses/"
       },
       "release": {
         "type": "string",
@@ -24,10 +32,10 @@
         "title": "Revision",
         "description": "The commit hash for the project that generated the wasm."
       },
-      "license": {
+      "filter_expression": {
         "type": "string",
-        "title": "License",
-        "description": "The license of the wasm, as a https://spdx.org/licenses/"
+        "title": "Filter Expression",
+        "description": "A JEXL to filter records"
       }
     }
   },
